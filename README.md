@@ -6,16 +6,16 @@ I build web products end to end, from the database schema to production. I am 19
 
 ---
 
-### [bloomly.by](https://bloomly.by) — flower-subscription marketplace, live with real payments
+### [bloomly.by](https://bloomly.by) — flower-subscription marketplace
 
-Designed and shipped alone: database, backend, web, mobile, deployment, and the support calls when something breaks.
+Designed and shipped alone: database, backend, web, mobile and deployment. Public launch is early October; the payment layer is written and smoke-tested but card acquiring is not enabled yet, and I would rather say that here than have you find it out later.
 
 | | |
 |---|---|
 | PostgreSQL | 65 tables · 83 idempotent migrations · 70 PL/pgSQL functions · 162 row-level security policies · 136 indexes |
 | Web | Next.js 16 App Router, React 19 — 84 pages, 184 Server Actions, three isolated dashboards |
 | Mobile | Expo / React Native — 47 screens |
-| Payments | Alfa-Bank card acquiring (RBS API) and ERIP |
+| Payments | Alfa-Bank card acquiring (RBS API) and ERIP — integration written end to end and covered by invariants; **live keys are not switched on yet** (they turn on in Q4 together with the company's tax-regime change) |
 
 The payment core is a PL/pgSQL state machine with row locking, so a replayed bank webhook cannot settle an order twice. The charged amount is reconciled against a computed view rather than trusted from the request body. Money logic lives in the database, not in application code.
 
