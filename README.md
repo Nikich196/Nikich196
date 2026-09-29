@@ -2,13 +2,13 @@
 
 **Full-stack developer — TypeScript · Next.js · PostgreSQL.** Brest, Belarus · remote · UTC+3
 
-I build web products end to end, from the database schema to production. I am 19 and I have no formal employment history, so everything below is work you can open and check rather than a claim you have to trust.
+I build web products end to end, from the database schema to production. I am 20 and I have no formal employment history, so everything below is work you can open and check rather than a claim you have to trust.
 
 ---
 
 ### [bloomly.by](https://bloomly.by) — flower-subscription marketplace
 
-Designed and shipped alone: database, backend, web, mobile and deployment. Public launch is early October; the payment layer is written and smoke-tested but card acquiring is not enabled yet, and I would rather say that here than have you find it out later.
+Designed and shipped alone: database, backend, web, mobile and deployment. Public launch is being prepared; the payment layer is written and smoke-tested but card acquiring is not enabled yet, and I would rather say that here than have you find it out later.
 
 | | |
 |---|---|
@@ -25,9 +25,9 @@ NestJS · Prisma · GraphQL · PostgreSQL · Docker.
 
 DataLoader eliminates N+1 across two levels of nesting, so the full nested query costs exactly six SQL statements — one per table. CI brings up the whole stack with `docker compose` and runs eighteen smoke tests against it, rather than only building the image.
 
-### WiFiSense — motion detection from Wi-Fi signal strength
+### [gorodki](https://github.com/Nikich196/gorodki) — iOS game about capturing Brest · in progress
 
-1,575 lines of dependency-free Python talking to the Windows Native WiFi API through `ctypes`. The detection threshold is derived analytically from the noise distribution rather than hand-tuned until the demo looked good. **0% false positives across 9,720 quiet samples.** I can defend that number; I have not measured the miss rate with the same rigour, and that is the honest weakness.
+A university team project with a classmate; demo in December 2026. Native iOS (Swift, SwiftUI, Live Activities): run or ride around a block and your GPS trace claims exactly that shape — plus fog-of-war exploration, clans, duels and a cycling league. Backend: ASP.NET Core 10 with PostgreSQL/PostGIS on free tiers. Run like a real team repo — issues, milestones, a contributing guide, CI — with **106 merged pull requests** so far. iOS builds now run locally on a Mac (Xcode 27) as well as in CI.
 
 ---
 
@@ -47,9 +47,9 @@ A green build, a written safeguard and a clean server log are all equally good a
 
 ### Stack
 
-`TypeScript (strict)` `JavaScript` `Python` `SQL` `PL/pgSQL`
-`Next.js` `React` `React Native` `Expo` `Node.js` `NestJS` `Prisma` `GraphQL`
-`PostgreSQL` `Supabase` `Docker` `GitHub Actions` `Git` `Linux`
+`TypeScript (strict)` `JavaScript` `Swift` `C#` `Python` `SQL` `PL/pgSQL`
+`Next.js` `React` `React Native` `Expo` `SwiftUI` `ASP.NET Core` `Node.js` `NestJS` `Prisma` `GraphQL`
+`PostgreSQL` `PostGIS` `Supabase` `Docker` `GitHub Actions` `Xcode` `Git` `Linux` `macOS`
 
 Studied at Brest State Technical University: C++, C#, Java, Pascal, assembly.
 
